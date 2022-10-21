@@ -12,7 +12,7 @@ const path=require('path');
 app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
 
 // Task2: create mongoDB connection 
-mongoose.connect('mongodb+srv://remyak:atLasDB22@cluster0.nxczl99.mongodb.net/employeeDB?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://remyak:<password>@cluster0.nxczl99.mongodb.net/employeeDB?retryWrites=true&w=majority')
 .then( () => {
     console.log("Mongodb connected successfully");
 })
